@@ -12,4 +12,7 @@ public class PythonBasics {
 		String str = "I am super excited for this course! ";
 		return (str.repeat(5));
 	}
+	public static void main(String[] args) {
+		
+	}
 }
