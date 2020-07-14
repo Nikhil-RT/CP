@@ -29,9 +29,9 @@ class Classy(object):
         if "tophat" in self.items:
             self.add += 2
         if "bowtie" in self.items:
-            self.addItem += 4
+            self.add += 4
         if "monocle" in self.items:
-            self.addItem += 5
+            self.add += 5
     
 
-        return self.addItem
+        return self.add
