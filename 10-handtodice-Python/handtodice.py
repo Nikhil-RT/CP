@@ -7,5 +7,6 @@
 
 def handtodice(hand):
 	# your code goes here
-	return (hand[0],hand[1],hand[2])
+	a= str(hand)
+	return (int(a[0]),int(a[1]),int(a[2]))
 	pass
