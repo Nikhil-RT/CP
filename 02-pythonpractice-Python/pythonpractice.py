@@ -26,7 +26,7 @@ class Classy(object):
 
     def classiness(self):
         for item in self.items:
-            # print (item)
+            print (item)
             if "tophat" == item:
                 self.add += 2
             elif "bowtie" == item:
