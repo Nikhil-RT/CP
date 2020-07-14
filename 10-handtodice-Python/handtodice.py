@@ -7,4 +7,5 @@
 
 def handtodice(hand):
 	# your code goes here
+	return (hand[0],hand[1],hand[2])
 	pass
