@@ -18,7 +18,7 @@ Use the test cases below to guide you!"""
 class Classy(object):
     
     def __init__(self):
-        self.items = []
+        self.items = [self]
 
     def classiness(self):
         addItem = 0
