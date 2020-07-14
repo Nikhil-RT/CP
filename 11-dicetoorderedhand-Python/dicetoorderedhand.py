@@ -14,7 +14,6 @@ import argparse
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	l = [a,b,c]
-	p = l.sort()
-	return ("".join(l))
+	l = [a,b,c].sort()
+	return ("".join(p))
 	
