@@ -4,6 +4,7 @@
 # a right triangle and False otherwise. You may wish to write a helper function,
 # distance(x1, y1, x2, y2), which you might call several times. Also, remember to use
 # almostEqual (instead of ==) when comparing floats.
+from math import isclose
 import math
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
@@ -11,11 +12,6 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	a = math.sqrt((x1-x2)**2+(y1-y2)**2)
 	b = math.sqrt((x2-x3)**2+(y2-y3)**2)
 	c = math.sqrt((x3-x1)**2+(y3-y1)**2)
-	a1 = a**2+b**2
-	b1 = a**2+c**2
-	c1 = b**2+c**2
-	if (a1 == c**2 or b1 == b**2 or c1 == a**2):
+	if (isclose(a**2+b**2, c**2, rel_tol=1e-9, abs_tol=0.0) or isclose(a**2+c**2, b**2, rel_tol=1e-9, abs_tol=0.0) or isclose(b**2+c**2, a**2, rel_tol=1e-9, abs_tol=0.0)):
 		return True
-	else:
-		return False
-	pass
+	return False
