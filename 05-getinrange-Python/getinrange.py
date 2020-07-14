@@ -19,4 +19,9 @@ def fun_getinrange(x, bound1, bound2):
     elif(x > max):
         return max
     else:
-        return x
+        return  x
+
+
+
+
+
