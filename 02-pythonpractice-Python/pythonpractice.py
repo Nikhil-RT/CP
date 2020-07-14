@@ -36,3 +36,19 @@ class Classy(object):
             else :
                 self.add += 0
         return self.add
+
+def main():
+    me = Classy()
+    result = me.classiness()
+    me.addItem("tophat")
+    result = me.classiness()
+    me.addItem("bowtie")
+    me.addItem("jacket")
+    me.addItem("monocle")
+    result = me.classiness()
+    me.addItem("bowtie")
+    result = me.classiness()
+
+if __name__ == '__main__':
+    main()
+    
