@@ -10,10 +10,10 @@ class nearestbusstop {
 		// your code goes here
 		if (street < 0) return -1;
 		double result = (double)street/8;
-		if(street%8 <= 4){
+		if(street%8 <= 8/2){
 			result = Math.floor(result);
 		}else{
-			result = Math.roun(result);
+			result = Math.round(result);
 		}
 		result = result * 8;
 		return (int)result;
