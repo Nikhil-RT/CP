@@ -19,7 +19,7 @@ class Classy(object):
     
     def __init__(self):
         self.items = []
-        self.addItem = 0
+        self.add = 0
 
     def addItem(self, item):
         self.items.append(item)
