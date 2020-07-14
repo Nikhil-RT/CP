@@ -20,7 +20,7 @@ def dicetoorderedhand(a, b, c):
 	res.append(c)
 	res.sort(reverse=True)
 	ret = ""
-	for i in res:
+	for i in len(res):
 		ret += str(res[i])
-	return ret;
+	return int(ret);
 	
