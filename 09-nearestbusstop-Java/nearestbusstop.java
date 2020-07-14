@@ -18,5 +18,7 @@ class nearestbusstop {
 
 		nearestbusstop n = new nearestbusstop();
 		System.out.println(n.fun_nearestbusstop(12));
+		System.out.println(n.fun_nearestbusstop(13));
+		System.out.println(n.fun_nearestbusstop(5));
 	}
 }
