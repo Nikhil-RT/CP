@@ -25,13 +25,13 @@ class Classy(object):
         self.items.append(item)
 
     def classiness(self):
-        
-        if "tophat" in self.items:
-            self.add += 2
-        if "bowtie" in self.items:
-            self.add += 4
-        if "monocle" in self.items:
-            self.add += 5
+        for item in self.items:
+            
+            if "tophat" == item:
+                self.add += 2
+            if "bowtie" == item:
+                self.add += 4
+            if "monocle" == item:
+                self.add += 5
     
-
         return self.add
