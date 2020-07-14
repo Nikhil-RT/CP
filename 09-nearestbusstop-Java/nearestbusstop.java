@@ -9,13 +9,13 @@ class nearestbusstop {
 	public int fun_nearestbusstop(int street){
 		// your code goes here
 		if (street < 0) return -1;
-		double result = (double)street/8;
-		System.out.println(result);
-		result = Math.round(result);
-		System.out.println(result);
-		result = result * 8;
-		System.out.println(result);
-		return (int)result;
+		if(street%8 == 0){
+			return street;
+		}else if(street%8 <= 8/2){
+			return (int) Math.floor(street/8)*8;
+		}else{
+			return (int) Math.floor(street/8)*8;
+		}
 
 	}
 	public static void main(String[] args) {
