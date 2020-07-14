@@ -10,6 +10,7 @@ class nearestbusstop {
 		// your code goes here
 		if (street < 0) return -1;
 		double result = (double)street/8;
+		System.out.println(street+"::"+result);
 		result = Math.floor(result);
 		return (int)result*8;
 
