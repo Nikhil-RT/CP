@@ -25,6 +25,7 @@ class Classy(object):
         self.items.append(item)
 
     def classiness(self):
+        self.add = 0
         for item in self.items:
             print (item)
             if "tophat" == item:
