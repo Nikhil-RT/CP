@@ -14,5 +14,10 @@ import argparse
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
+	res = list()
+	res.append(a)
+	res.append(b)
+	res.append(c)
+	
 	return [a,b,c].sort();
 	
