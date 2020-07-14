@@ -43,10 +43,12 @@ def main():
     print(result)
     me.addItem("tophat")
     result = me.classiness()
+    print(result)
     me.addItem("bowtie")
     me.addItem("jacket")
     me.addItem("monocle")
     result = me.classiness()
+    print(result)
     me.addItem("bowtie")
     result = me.classiness()
 
