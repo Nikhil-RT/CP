@@ -5,9 +5,16 @@
 
 class eggcartons {
 	public int fun_eggcartons(int eggs){
-		System.out.println("hello");
-		return 0;
-		
+		int carton = 12;
+		if (eggs%carton == 0) {
+			return eggs/carton;
+		}
+		else if(eggs%carton == 1){
+			return (eggs/carton )+1;
+		}
+		else{
+			return 1;
+		}
 	}
 	public static void main(String[] args) {
 		
