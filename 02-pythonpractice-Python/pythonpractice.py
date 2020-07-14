@@ -51,6 +51,7 @@ def main():
     print(result)
     me.addItem("bowtie")
     result = me.classiness()
+    print(result)
 
 if __name__ == '__main__':
     main()
