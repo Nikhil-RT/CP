@@ -15,12 +15,12 @@ import argparse
 def dicetoorderedhand(a, b, c):
 	# your code goes here
 	res = list()
-	res.append(a)
-	res.append(b)
-	res.append(c)
+	res.append(a,b,c)
+	# res.append(b)
+	# res.append(c)
 	res.sort(reverse=True)
-	ret = ""
+	string = ""
 	for i in range(len(res)):
-		ret += str(res[i])
-	return int(ret);
+		string += str(res[i])
+	return int(string);
 	
