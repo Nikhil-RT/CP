@@ -5,8 +5,9 @@
 
 class eggcartons {
 	public int fun_eggcartons(int eggs){
+		System.out.println("hello");
 		return 0;
-
+		
 	}
 	public static void main(String[] args) {
 		
