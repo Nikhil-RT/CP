@@ -10,9 +10,6 @@ class nearestbusstop {
 		// your code goes here
 		if (street < 0) return -1;
 		double result = street/8;
-		if(result<1){
-			result = 1;
-		}
 		return (int)Math.floor(result*8);
 
 	}
