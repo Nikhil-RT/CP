@@ -12,6 +12,7 @@ class nearestbusstop {
 		if(street%8 == 0){
 			return street;
 		}else if(street%8 <= 8/2){
+			System.out.println("hree");
 			return (int) Math.floor(street/8)*8;
 		}else{
 			return (int) Math.ceil(street/8)*8;
