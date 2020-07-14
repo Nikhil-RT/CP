@@ -12,4 +12,4 @@ def fun_isfactor(f, n):
 		return True
 	elif(n == 0 and f == 0):
 		return True
-	return True
+	return False
