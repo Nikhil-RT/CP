@@ -40,6 +40,7 @@ class Classy(object):
 def main():
     me = Classy()
     result = me.classiness()
+    print(result)
     me.addItem("tophat")
     result = me.classiness()
     me.addItem("bowtie")
