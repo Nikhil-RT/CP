@@ -30,4 +30,6 @@
 
 def playstep2(hand, dice):
 	# your code goes here
-	pass
+	a = str(hand)
+	List = [int(a[0]),int(a[1]),int(a[2])].sort(reverse=True)
+	Min = min(int(a[0]),int(a[1]),int(a[2]))
