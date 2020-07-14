@@ -10,7 +10,13 @@
 # assert(dicetoorderedhand(2,2,2) == 222)
 # Hint: You can use max(a,b,c) to find the largest of 3 values, and
 # min(a,b,c) to find the smallest.
+import argparse
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	list = [argparse[a],argparse[b],argparse[c]]
+	s = list.sort()
+	a =""
+	for i in s:
+		a +=i
+	return a
