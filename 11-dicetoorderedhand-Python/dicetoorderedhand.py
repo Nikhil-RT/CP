@@ -19,5 +19,5 @@ def dicetoorderedhand(a, b, c):
 	res.append(b)
 	res.append(c)
 	
-	return [a,b,c].sort();
+	return res.sort();
 	
