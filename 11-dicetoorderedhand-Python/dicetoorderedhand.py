@@ -18,6 +18,6 @@ def dicetoorderedhand(a, b, c):
 	res.append(a)
 	res.append(b)
 	res.append(c)
-	res.sort()
+	res.sort(reversed=true)
 	return res;
 	
