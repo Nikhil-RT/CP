@@ -6,5 +6,9 @@
 class eggcartons {
 	public int fun_eggcartons(int eggs){
 		return 0;
+
+	}
+	public static void main(String[] args) {
+		
 	}
 }
