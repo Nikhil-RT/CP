@@ -16,7 +16,7 @@ Everything else has 0 points.
 Use the test cases below to guide you!"""
 
 class Classy(object):
-    
+    addItem = 0
     def __init__(self):
         self.items = []
 
@@ -24,7 +24,6 @@ class Classy(object):
         self.items.append(item)
 
     def classiness(self):
-        addItem = 0
         
         if "tophat" in self.items:
             addItem += 2
@@ -32,7 +31,6 @@ class Classy(object):
             addItem += 4
         if "monocle" in self.items:
             addItem += 5
-        else:
-            addItem += 0
+    
 
         return addItem
