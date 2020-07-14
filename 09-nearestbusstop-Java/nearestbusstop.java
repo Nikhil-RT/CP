@@ -13,7 +13,7 @@ class nearestbusstop {
 		if(street%8 <= 4){
 			result = Math.floor(result);
 		}else{
-			result = Math.floor(result);
+			result = Math.roun(result);
 		}
 		result = result * 8;
 		return (int)result;
