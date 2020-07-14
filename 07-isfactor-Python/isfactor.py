@@ -9,7 +9,7 @@ def fun_isfactor(f, n):
 	# return False # replace with your solution
 	if (n == 0 and f == 0):
     		return True
-	elif (n != 0 and f!=0 and n%f == 0):
+	elif (n%f == 0):
 		return True
 	
 	return False	
