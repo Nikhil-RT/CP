@@ -21,6 +21,6 @@ def dicetoorderedhand(a, b, c):
 	res.sort(reverse=True)
 	ret = ""
 	for i in res:
-		ret += res[i]
+		ret += str(res[i])
 	return ret;
 	
