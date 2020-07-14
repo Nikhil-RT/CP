@@ -27,7 +27,7 @@ class Classy(object):
     def classiness(self):
         
         if "tophat" in self.items:
-            self.addItem += 2
+            self.add += 2
         if "bowtie" in self.items:
             self.addItem += 4
         if "monocle" in self.items:
