@@ -15,8 +15,7 @@ class nearestbusstop {
 		}else{
 			result = Math.round(result);
 		}
-		result = result * 8;
-		return (int)result;
+		return (int)(result*8);
 
 	}
 	public static void main(String[] args) {
