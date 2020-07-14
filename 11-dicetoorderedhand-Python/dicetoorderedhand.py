@@ -19,5 +19,8 @@ def dicetoorderedhand(a, b, c):
 	res.append(b)
 	res.append(c)
 	res.sort(reverse=True)
-	return res;
+	ret = ""
+	for i in res:
+		ret += res[i]
+	return ret;
 	
