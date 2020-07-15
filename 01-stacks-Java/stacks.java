@@ -56,9 +56,9 @@ class LinkedList{
 	}
 
 	public void printLL() {
-		Element current = this.head;
+		Element current = head;
 		while(current.next != null){
-			System.out.println(current);
+			System.out.println(current.value);
 			current = current.next;
 		}
 
