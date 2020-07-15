@@ -88,7 +88,7 @@ public class stacks{
 		stacks stack = new stacks(e1);
 		stack.push(e2);
 		stack.push(e3);
-		System.out.println(stack.ll);
+		System.out.println(stack.ll.toString());
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
