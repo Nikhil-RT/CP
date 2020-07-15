@@ -67,7 +67,6 @@ public class stacks{
 	public stacks(Element top){
 		ll = new LinkedList(top);
 	}
-	public Element first = null;
 
 	public void push(Element e){
 		// "Push (add) a new element onto the top of the stack"
