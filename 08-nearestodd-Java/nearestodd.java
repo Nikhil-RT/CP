@@ -8,12 +8,9 @@ class nearestodd {
 		// your code goes here
 		
 		if (n%2 == 0) {
-			return (int)Math.round(n);
+			return (int)(n)-1;
 		}
-		else if (n%2 != 0) {
-			return (int)n;
-		}
-		return -1;
+		return (int)(2*((int)(n/2.0))+1);
 	}
 }
 
