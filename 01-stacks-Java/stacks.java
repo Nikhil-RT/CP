@@ -91,7 +91,8 @@ public class stacks{
 
 	public Element pop(){
 		// ll.delete_first();
-		return new Element(5);
+		// return new Element(5);
+		return ll.delete_first();
 	}
 	// public static void main(String[] args) {
 	// 	LinkedList ll = new LinkedList();
