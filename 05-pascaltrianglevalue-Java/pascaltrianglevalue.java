@@ -9,12 +9,15 @@ class pascaltrianglevalue {
 	public int fun_pascaltrianglevalue(int row, int col){
 		// your code goes here
 		int res = 1;
+
 		if (row < col) {
 			return 0;
 		}
+
 		if (col > (row - col)) {
 			col = row - col;
 		}
+		
 		int i = 0;
 		while(i < col) {
 			res = res*(row - i);
