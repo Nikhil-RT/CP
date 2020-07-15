@@ -40,7 +40,7 @@ def sortUSA():
 def alphaAsia():
     for continent in locations.keys():
         if continent == 'Asia':
-
-            for country in locations[continent].values():
-                for city in country:
-                    return country
+            return locations[continent].values()
+            # for country in locations[continent].values():
+                # for city in country:
+                #     return country
