@@ -50,19 +50,19 @@ class LinkedList{
 			Element current = new_element;
 			current.next = head;
 			head = current;
-			System.out.print(" "+ head.value+"\n");
+			// System.out.print(" "+ head.value+"\n");
 		}
 		
 	}
 
-	public void printLL(Element head) {
-		Element current = head;
-		while(current.next != null){
-			System.out.println(current.value);
-			current = current.next;
-		}
-		System.out.println(current);
-	}
+	// public void printLL(Element head) {
+	// 	Element current = head;
+	// 	while(current.next != null){
+	// 		System.out.println(current.value);
+	// 		current = current.next;
+	// 	}
+	// 	System.out.println(current);
+	// }
 
 	public Element delete_first(){
 		// return this.head;
@@ -72,7 +72,7 @@ class LinkedList{
 	   }
 	   Element current = head;
 	   head = head.next;
-	   current.next = null;
+	//    current.next = null;
 	   return current;
 	}
 }
@@ -90,7 +90,7 @@ public class stacks{
 	}
 
 	public Element pop(){
-		ll.delete_first();
+		// ll.delete_first();
 		return new Element(5);
 	}
 	// public static void main(String[] args) {
