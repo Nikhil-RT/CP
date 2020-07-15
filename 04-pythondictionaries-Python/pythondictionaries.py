@@ -38,9 +38,9 @@ def sortUSA():
                 return sorted(each[akey])
 
 def alphaAsia():
-    for country in locations.keys():
-        if country == 'India':
+    for continent in locations.keys():
+        if continent == 'Asia':
 
-            for a in country.values():
-                for city in a.values():
-                    return city
+            for country in locations[continent].values():
+                for city in country:
+                    return country
