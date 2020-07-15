@@ -7,11 +7,13 @@ import java.lang.Math;
 public class IsPerfectSquare {
 	public boolean isPerfectSquare(int n) {
 		// Your code goes here
-		
-		if (n >= 0 && n == Math.sqrt(n*n) ) {
-			return true;
+		if (n >= 0){
+			if (n == Math.sqrt(n*n) ) {
+				return true;
+			}
 		}
 		return false;
+		
 	}
 	public static void main(String[] args) {
 		
