@@ -7,7 +7,8 @@ import java.lang.Math;
 public class IsPerfectSquare {
 	public boolean isPerfectSquare(int n) {
 		// Your code goes here
-		if (n >= 0 && n == (int)Math.sqrt(n*n) ) {
+		
+		if (n >= 0 && n == Math.sqrt(n*n) ) {
 			return true;
 		}
 		return false;
