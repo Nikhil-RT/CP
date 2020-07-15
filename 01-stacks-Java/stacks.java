@@ -27,7 +27,7 @@ class LinkedList{
 		this.head = head;
 	}
 
-	public void append(Element new_element){
+	public void append(Element new_element) {
 		Element current = this.head;
         if (this.head != null) {
             while(current.next != null){
