@@ -49,7 +49,7 @@ class LinkedList{
 		Element current = new_element;
 		head = current.next;
 		current = head;
-		System.out.println(current);
+		System.out.println("1."+current);
 	}
 
 	public Element delete_first(){
