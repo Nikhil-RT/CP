@@ -23,18 +23,18 @@ class LinkedList{
 		this.head = head;
 	}
 
-	// public void append(Element new_element){
-	// 	Element current = this.head;
-    //     if (this.head != null) {
-    //         while(current.next != null){
-    //             current = current.next;
-    //         }
-    //         current.next = new_element;
-    //     }
-    //     else{
-    //         this.head = new_element;
-    //     }
-	// }
+	public void append(Element new_element){
+		Element current = this.head;
+        if (this.head != null) {
+            while(current.next != null){
+                current = current.next;
+            }
+            current.next = new_element;
+        }
+        else{
+            this.head = new_element;
+        }
+	}
 
 	public void insert_first(Element new_element){
 		 // "Insert new element as the head of the LinkedList"
