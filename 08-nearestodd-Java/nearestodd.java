@@ -6,6 +6,7 @@
 class nearestodd {
 	public int fun_nearestodd(double n){
 		// your code goes here
+		n = (int) n;
 		if (n%2 == 0) {
 			return (int)Math.floor(n);
 		}
