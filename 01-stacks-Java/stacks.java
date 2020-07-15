@@ -46,10 +46,13 @@ class LinkedList{
 		if (head == null){
 			head = new_element;
 		}
-		Element current = new_element;
-		head = current.next;
-		current = head;
-		System.out.println("1."+current);
+		else{
+			Element current = new_element;
+			head = current.next;
+			current = head;
+			System.out.println("1."+current);
+		}
+		
 	}
 
 	public Element delete_first(){
