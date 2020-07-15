@@ -7,7 +7,7 @@ import java.lang.Math;
 public class IsPerfectSquare {
 	public boolean isPerfectSquare(int n) {
 		// Your code goes here
-		if (n>0){
+		if (n>=0){
 			double s = Math.sqrt(n);
 			return (s-Math.floor(s) == 0);
 		}	
