@@ -61,7 +61,7 @@ class LinkedList{
 			System.out.println(current.value);
 			current = current.next;
 		}
-
+		System.out.println(current);
 	}
 
 	public Element delete_first(){
@@ -93,20 +93,22 @@ public class stacks{
 		ll.delete_first();
 		return new Element(5);
 	}
-	public static void main(String[] args) {
-		// LinkedList ll;
-		Element e1 = new Element(1);
-      	Element e2 = new Element(2);
-		Element e3 = new Element(3);
-		stacks stack = new stacks(e1);
-		stack.push(e2);
-		stack.push(e3);
-		// System.out.println(stack.ll.head);
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		System.out.println(stack.pop());
-		// ll.printLL();
-	}
+	// public static void main(String[] args) {
+	// 	LinkedList ll = new LinkedList();
+	// 	Element e1 = new Element(1);
+    //   	Element e2 = new Element(2);
+	// 	Element e3 = new Element(3);
+	// 	e1.next = e2;
+	// 	e2.next = e3;
+	// 	stacks stack = new stacks(e1);
+	// 	stack.push(e2);
+	// 	stack.push(e3);
+	// 	// System.out.println(stack.ll.head);
+	// 	System.out.println(stack.pop());
+	// 	System.out.println(stack.pop());
+	// 	System.out.println(stack.pop());
+	// 	System.out.println(stack.pop());
+	// 	ll.printLL(e1);
+	// }
 
 }
