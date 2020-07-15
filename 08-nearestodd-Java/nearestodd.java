@@ -10,7 +10,10 @@ class nearestodd {
 		if (n%2 == 0) {
 			return (int)(n)-1;
 		}
-		return (int)(2*((int)(n/2.0))+1);
+		else{
+			return (int)(2*((int)(n/2.0))+1);
+		}
+		
 	}
 }
 
