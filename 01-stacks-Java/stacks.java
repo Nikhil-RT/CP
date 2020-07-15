@@ -7,7 +7,10 @@
 // Think about this while you're implementing:
 // why is it easier to add an "insert_first"
 // function than just use "append"?"""
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
+import java.beans.Transient;
 class Element{
 	int value;
 	Element next;
@@ -74,9 +77,21 @@ public class stacks{
 	}
 
 	public Element pop(){
+		ll.delete_first();
 		return new Element(5);
 	}
 	public static void main(String[] args) {
-		
+		Element e1 = new Element(1);
+      	Element e2 = new Element(2);
+		Element e3 = new Element(3);
+		stacks stack = new stacks(e1);
+		stack.push(e2);
+		stack.push(e3);
+		System.out.println(stack);
+		assertEquals("1.", 3, stack.pop().value);
+		assertEquals("2.", 2, stack.pop().value);
+		assertEquals("3.", 1, stack.pop().value);
+		assertEquals("4.", null, stack.pop());
 	}
+
 }
