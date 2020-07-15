@@ -7,5 +7,15 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+	# return 0
+	mul = -1 if n<0 else 1
+	n = list(str(abs(n)))
+	n = n[::-1]
+	# mul = 
+	# if(n%10 == 0):
+	if (len(n)<=k):
+    		n.append(str(d))
+	n[k] = str(d)
+	n = int("".join(n[::-1]))*mul
+	return n
 
