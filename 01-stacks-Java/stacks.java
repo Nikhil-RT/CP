@@ -50,7 +50,7 @@ class LinkedList{
 			Element current = new_element;
 			current.next = head;
 			head = current;
-			System.out.println("1."+ head);
+			System.out.print("1"+ head.value);
 		}
 		
 	}
