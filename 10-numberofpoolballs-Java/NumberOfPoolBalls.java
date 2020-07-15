@@ -10,6 +10,11 @@
 public class NumberOfPoolBalls {
 	public long numberOfPoolBalls(int n) {
 		// Your code goes here
-		return 0;
+		int sum = 0;
+		for (int i = 1; i<=n; i++){
+			sum += i;
+		}
+		return sum;
+		// return 0;
 	}
 }
