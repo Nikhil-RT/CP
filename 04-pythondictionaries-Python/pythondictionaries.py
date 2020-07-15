@@ -43,4 +43,5 @@ def alphaAsia():
         if continent == 'Asia':
             for k,v in locations[continent].items:
                 ret.append(v[0]+' - '+k)
+    return ret
                 
