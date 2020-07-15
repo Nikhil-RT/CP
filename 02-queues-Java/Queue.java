@@ -17,6 +17,6 @@ public class Queue{
 	}
 
 	public int dequeue(){
-		return 0;
+		return storage[front++];
 	}
 }
