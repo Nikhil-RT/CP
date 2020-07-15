@@ -88,11 +88,10 @@ public class stacks{
 		stacks stack = new stacks(e1);
 		stack.push(e2);
 		stack.push(e3);
-		System.out.println();
-		stack.pop();
-		stack.pop();
-		stack.pop();
-		stack.pop();
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
 		// assertEquals("1.", 3, );
 		// assertEquals("2.", 2, );
 		// assertEquals("3.", 1, );
