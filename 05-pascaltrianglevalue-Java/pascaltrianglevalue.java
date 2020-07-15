@@ -17,7 +17,7 @@ class pascaltrianglevalue {
 		if (col > (row - col)) {
 			col = row - col;
 		}
-		
+
 		int i = 0;
 		while(i < col) {
 			res = res*(row - i);
