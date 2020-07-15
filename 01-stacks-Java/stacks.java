@@ -49,8 +49,8 @@ class LinkedList{
 		else{
 			Element current = new_element;
 			current.next = head;
-			head = current;
-			System.out.print(" "+ head.value);
+			current = head;
+			System.out.print(" "+ current.value+"\n");
 		}
 		
 	}
