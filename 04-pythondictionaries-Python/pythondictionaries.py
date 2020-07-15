@@ -41,6 +41,6 @@ def alphaAsia():
     for country in locations.keys():
         if country == 'India':
 
-            for country in country.values():
-                for city in country.values():
+            for a in country.values():
+                for city in a.values():
                     return city
