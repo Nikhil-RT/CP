@@ -49,7 +49,7 @@ class LinkedList{
 		Element current = new_element;
 		head = current.next;
 		current = head;
-
+		System.out.println(current);
 	}
 
 	public Element delete_first(){
@@ -93,10 +93,6 @@ public class stacks{
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
-		// assertEquals("1.", 3, );
-		// assertEquals("2.", 2, );
-		// assertEquals("3.", 1, );
-		// assertEquals("4.", null, );
 	}
 
 }
