@@ -6,4 +6,9 @@
 
 
 def fun_get_kth_digit(digit, k):
+	str(digit)
+	if(k > len(digit)):
+    		return 0
+	for i in range(len(digit)):
+    		return digit[k];
 	return 0
