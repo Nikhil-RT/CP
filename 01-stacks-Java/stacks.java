@@ -1,3 +1,5 @@
+// import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+
 // """Add a couple methods to our LinkedList class,
 // and use that to implement a Stack.
 // You have 4 functions below to fill in:
@@ -21,26 +23,41 @@ class LinkedList{
 		this.head = head;
 	}
 
-	public void append(Element new_element){
-		Element current = this.head;
-        if (this.head != null) {
-            while(current.next != null){
-                current = current.next;
-            }
-            current.next = new_element;
-        }
-        else{
-            this.head = new_element;
-        }
-	}
+	// public void append(Element new_element){
+	// 	Element current = this.head;
+    //     if (this.head != null) {
+    //         while(current.next != null){
+    //             current = current.next;
+    //         }
+    //         current.next = new_element;
+    //     }
+    //     else{
+    //         this.head = new_element;
+    //     }
+	// }
 
 	public void insert_first(Element new_element){
 		 // "Insert new element as the head of the LinkedList"
+		// new_element = new Element(value);
+		if (head == null){
+			head = new_element;
+		}
+		Element current = new_element;
+		head = current.next;
+		current = head;
+
 	}
 
 	public Element delete_first(){
-		return this.head;
+		// return this.head;
 	   // "Delete the first (head) element in the LinkedList as return it"
+	   if (head == null) {
+		   return head;
+	   }
+	   Element current = head;
+	   head = head.next;
+	   current.next = null;
+	   return current;
 	}
 }
 
@@ -50,9 +67,11 @@ public class stacks{
 	public stacks(Element top){
 		ll = new LinkedList(top);
 	}
+	public Element first = null;
 
 	public void push(Element e){
-		 // "Push (add) a new element onto the top of the stack"
+		// "Push (add) a new element onto the top of the stack"
+		ll.insert_first(e);
 	}
 
 	public Element pop(){
