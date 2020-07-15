@@ -13,7 +13,7 @@ public class Queue{
 	}
 
 	public int peek(){
-		return 0;
+		return storage[front];
 	}
 
 	public int dequeue(){
