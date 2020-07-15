@@ -14,16 +14,17 @@ class pascaltrianglevalue {
 			return 0;
 		}
 
-		if (col > (row - col)) {
-			col = row - col;
-		}
-
-		int i = 0;
-		while(i < col) {
-			res = res*(row - i);
-			res = res/(i + 1);
-			i++;
-		}
+		// if (col > (row - col)) {
+		// 	col = row - col;
+		// }
+		if (row > col){
+			int i = 0;
+			while(i < col) {
+				res = res*(row - i);
+				res = res/(i + 1);
+				i++;
+			}
+		}	
 		return res;
 	}
 
