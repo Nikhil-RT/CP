@@ -9,7 +9,7 @@ public class Queue{
 	}
 	
 	public void enqueue(int new_ele){
-
+		storage[rear++] = new_ele;
 	}
 
 	public int peek(){
