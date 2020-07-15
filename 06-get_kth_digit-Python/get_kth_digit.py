@@ -14,8 +14,4 @@ def fun_get_kth_digit(digit, k):
     		# print(int(digit[k]))
     		return int(digit[k])
 	return 0
-
-if __name__ == '__main__':
-    	# print(digit)
-    	print(fun_get_kth_digit(789,3))
 	
