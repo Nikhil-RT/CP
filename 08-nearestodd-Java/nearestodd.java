@@ -8,7 +8,7 @@ class nearestodd {
 		// your code goes here
 		
 		if (n%2 == 0) {
-			return (int)n-1;
+			return (int)Math.floor(n)-1;
 		}
 		else if (n%2 != 0) {
 			return (int)n;
