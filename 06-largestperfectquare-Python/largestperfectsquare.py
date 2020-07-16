@@ -11,5 +11,7 @@ def largestperfectsquare(n):
 	# your code goes here
 	ls = []
 	if(int(math.sqrt(n)+0.5)**2 == n):
-    		ls.append(n)
-	pass
+		ls = ls.append(n)
+		ls.sorted()
+		for i in range(len(n)):
+			return ls[0]
