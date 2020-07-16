@@ -6,8 +6,9 @@
 # in increasing order. How does a function return multiple values? Like so:
 # return root1, root2
 
-import math
+import cmath
 def fun_find_int_roots(a, b, c):
-	return 0, 0
-
-
+    # root1 = (int)(math.sqrt(b**2-(4*a*c))-b/(2*a)
+	d = (b**2)-(4*a*c)
+	root1 = (-b-cmath.sqrt(d))/(2*a)
+	root2 = (-b+cmath.sqrt(d))/(2*a)
