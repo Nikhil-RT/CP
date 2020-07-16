@@ -10,7 +10,7 @@ import math
 def largestperfectsquare(n):
 	# your code goes here
 	ls = []
-	if(int(math.sqrt(n))**2 == n):
+	if(int(math.sqrt(n))== int(n)):
 		ls.append(n)
 		ls.sorted(reverse = True)
 		for i in range(len(ls)):
