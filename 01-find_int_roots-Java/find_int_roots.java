@@ -13,6 +13,7 @@ class find_int_roots {
 		
 		int[] arr = {a,b,c};
 		int root1 = (-b)-(((int)Math.sqrt((int)Math.pow(b, 2)-4*a*c)/2*a));
+		int root2 = (-b)+(((int)Math.sqrt((int)Math.pow(b, 2)-4*a*c)/2*a));
 		return arr;
 			
 	}
