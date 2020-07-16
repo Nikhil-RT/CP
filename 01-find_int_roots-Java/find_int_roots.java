@@ -5,17 +5,15 @@
 // # the roots are all integers. Your function should return these 2 int roots as a list
 // # in increasing order. How does a function return multiple values? Like so:
 // # return root1, root2
-import java.lang.Math;
+
 
 class find_int_roots {
 	public int[] fun_find_int_roots(int a, int b, int c){
 		// your code goes here
 		
-		// int[] arr = {a,b,c};
-		// return arr;
-		int root1 = -b-((int)Math.sqrt(b^2-4*a*c)/(2*a));
-		int root2 = -b+((int)Math.sqrt(b^2-4*a*c)/(2*a));
-		int [] abc = {root1,root2};
-		return abc;
+		int[] arr = {a,b,c};
+		int root1 = (-b)-(((int)Math.sqrt((int)Math.pow(b, 2)-4*a*c)/2*a));
+		return arr;
+			
 	}
 }
