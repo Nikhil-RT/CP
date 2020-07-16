@@ -12,9 +12,10 @@ class find_int_roots {
 		// your code goes here
 		
 		int[] arr = {a,b,c};
-		int root1 = (-b)-(((int)Math.sqrt((int)Math.pow(b, 2)-4*a*c)/2*a));
-		int root2 = (-b)+(((int)Math.sqrt((int)Math.pow(b, 2)-4*a*c)/2*a));
-		int root[] = {root1,root2};
+		double root1 = ((Math.sqrt(Math.pow(b, 2)-4*a*c)/2*a));
+		double root2 = ((Math.sqrt(Math.pow(b, 2)-4*a*c)/2*a));
+		
+		int root[] = {(int)root1,(int)root2};
 		return root;
 			
 	}
