@@ -15,7 +15,7 @@ class find_int_roots {
 		// return arr;
 		int root1 = -b-((int)Math.sqrt(b^2-4*a*c)/(2*a));
 		int root2 = -b+((int)Math.sqrt(b^2-4*a*c)/(2*a));
-		int [] abc ={root1,root2};
+		int [] abc = {root1,root2};
 		return abc;
 	}
 }
