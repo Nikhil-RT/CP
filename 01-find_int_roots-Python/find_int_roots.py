@@ -12,3 +12,4 @@ def fun_find_int_roots(a, b, c):
 	d = (b**2)-(4*a*c)
 	root1 = (-b-cmath.sqrt(d))/(2*a)
 	root2 = (-b+cmath.sqrt(d))/(2*a)
+	return root1,root2
