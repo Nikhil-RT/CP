@@ -15,3 +15,5 @@ def largestperfectsquare(n):
 		ls.sorted(reverse = True)
 		for i in range(len(ls)):
 			return ls[0]
+
+	return 0
