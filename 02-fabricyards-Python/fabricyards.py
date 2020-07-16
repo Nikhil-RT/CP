@@ -32,5 +32,5 @@ def fun_fabricexcess(inches):
 			return 72-inches;
 	if (inches>72 and inches <=108):
     		return 108-inches
-	# return 0
+	return 0
 
