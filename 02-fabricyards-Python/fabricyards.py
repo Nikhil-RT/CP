@@ -14,7 +14,7 @@
 
 def fun_fabricyards(inches):
 	# your code goes here
-	if(inches>=36 and inches <=72):
+	if(inches>36 and inches <=72):
     		return 2
 	if(inches<=36 and inches>0):
     		return 1
@@ -24,8 +24,6 @@ def fun_fabricyards(inches):
 
 def fun_fabricexcess(inches):
 	# your code goes here
-	# if(inches == 36):
-	# 	return 0
 	if(inches<=36 and inches>0):
     		return 36-inches
 	if(inches>36 and inches <=72):
