@@ -13,6 +13,6 @@
 def gcd(m, n):
 	# your code goes her
 	if (n == 0):
-    		return True
+    		return m
 	else:
 		return gcd(n,m%n)
