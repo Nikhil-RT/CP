@@ -8,7 +8,7 @@
 # head down (so we say that "up is down")
 
 def fun_rectangle_overlap(left1, top1, width1, height1, left2, top2, width2, height2):
-    if(width1 > left2 and width2 > left1):
+    if(width1 >= left2 and width2 > left1):
         if (height1 <= top2 and height2 > top1):    
             return True
     return False
