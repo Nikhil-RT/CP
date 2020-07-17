@@ -9,11 +9,9 @@
 import math
 def largestperfectsquare(n):
 	# your code goes here
-	ls = []
-	if(int(math.sqrt(n))== int(n)):
-		ls.append(n)
-		ls.sorted(reverse = True)
-		for i in range(len(ls)):
-			return ls[0]
-
-	return 0
+	if(type(n)==int and n >= 0):
+		for i in range(0,n):
+			if(int(math.sqrt(i) + .5)**2 <= n):
+				sq = int(math.sqrt(i)+.5)**2
+				
+		return sq
