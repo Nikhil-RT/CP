@@ -4,8 +4,9 @@
 
 def hasconsecutivedigits(n):
 	# your code goes here
+	n =str(abs(n))
 	if(len(str(n))>1):
 		for i in str(n):
-			if ( i == i+1):
+			if (n[i] == n[i+1]):
 				return True
 	return False
