@@ -4,21 +4,21 @@
 
 def mostfrequentdigit(n):
 	# your code goes here
-	n = str(n)
-	if(len(n) == 1):
+	abc = str(n)
+	if(len(abc) == 1):
 		return int(n)
-	elif(len(n)==2):	
+	elif(len(abc) == 2):	
 		# return n
-		if(int(n[0]) <= int(n[1])):
-			return int(n[0])
+		if(int(abc[0]) <= int(abc[1])):
+			return int(abc[0])
 		else:
-			return int(n[1])
+			return int(abc[1])
 	else:
 		count = 0
 		i = -1
 		for a in range(len(n)-1):
-			if(int(n[i]) == int(n[i+1])):
-				i = n[i]
+			if(int(abc[i]) == int(abc[i+1])):
+				i = abc[i]
 				count = count + 1
 		if (count > 0):
 			return int(i)
