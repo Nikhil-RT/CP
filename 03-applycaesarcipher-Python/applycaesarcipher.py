@@ -11,7 +11,16 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-	return ""
+	a = ""
+	for i in range(len(msg)):
+		b = msg[i]
+		if(b == " "):
+    			a += " "
+		elif b.isupper():
+    			a+=chr((ord(b)+shift - 65)%26 + 65)
+		else:
+    			a+=chr((ord(b)+shift - 97)%26 + 97)		
+	return a
 
 
 
