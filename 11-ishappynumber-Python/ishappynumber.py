@@ -24,7 +24,7 @@ def ishappynumber(n):
 			n//=10
 		return i
 	lst = []
-	while sum(n) not in lst:
+	while (sum(n) not in lst):
 		result = sum(n)
 		if (result == 1):
 			return True
