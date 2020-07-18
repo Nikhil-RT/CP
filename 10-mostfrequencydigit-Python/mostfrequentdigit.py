@@ -5,7 +5,7 @@
 def mostfrequentdigit(n):
 	# your code goes here
 	n = str(n)
-	if(lrn(n) == 1):
+	if(len(n) == 1):
 		return n
 	elif(len(n)==2):	
 		# return n
@@ -17,7 +17,7 @@ def mostfrequentdigit(n):
 		count = 0
 		i = -1
 		for a in range(len(n)-1):
-			if(s[i] == s[i+1]):
+			if(n[i] == n[i+1]):
 				i = n[i]
 				count = count + 1
 		if (count > 0):
