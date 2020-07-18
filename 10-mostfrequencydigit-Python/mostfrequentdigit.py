@@ -7,9 +7,9 @@ def mostfrequentdigit(n):
 	n = str(n)
 	if(lrn(n) == 1):
 		return n
-	elif(len(s)==2):	
+	elif(len(n)==2):	
 		# return n
-		if(s[0] <= s[1]):
+		if(n[0] <= n[1]):
 			return int(n[0])
 		else:
 			return int(n[1])
