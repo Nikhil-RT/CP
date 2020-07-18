@@ -9,7 +9,7 @@ def mostfrequentdigit(n):
 		return int(n)
 	elif(len(n)==2):	
 		# return n
-		if(n[0] <= n[1]):
+		if(int(n[0]) <= int(n[1])):
 			return int(n[0])
 		else:
 			return int(n[1])
@@ -17,7 +17,7 @@ def mostfrequentdigit(n):
 		count = 0
 		i = -1
 		for a in range(len(n)-1):
-			if(n[i] == n[i+1]):
+			if(int(n[i]) == int(n[i+1])):
 				i = n[i]
 				count = count + 1
 		if (count > 0):
