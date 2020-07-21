@@ -12,7 +12,6 @@ def ishappynumber(n):
 			i = i + (r**2)
 			number = number//10
 		return i
-	
 	lst = []
 	while sum(n) not in lst:
 		result = sum(n)
