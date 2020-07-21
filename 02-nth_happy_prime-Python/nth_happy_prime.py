@@ -4,6 +4,15 @@
 
 
 def ishappynumber(n):
+	
+	def sum(number):
+		i = 0
+		while(number > 0):
+			r = number%10
+			i+=(r**2)
+			number = number//10
+		return i
+	
 	lst = []
 	while(sum(n) not in lst):
 		result = sum(n)
@@ -14,13 +23,7 @@ def ishappynumber(n):
 			n = result
 	return False
 
-	def sum(n):
-		i = 0
-		while(n>0):
-			r = n%10
-			i+=(r**2)
-			n//=10
-		return i
+	
 
 def fun_nth_happy_prime(n):
     # return 0
