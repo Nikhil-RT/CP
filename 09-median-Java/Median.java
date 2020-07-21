@@ -6,6 +6,15 @@
 public class Median {
 	public int median(double[] list) {
 		// Your code goes here
-		return 0;
+		int n = list.length;
+		Double med;
+		if (n%2 == 0) {
+			double elements = list[n/2]+list[n/2 - 1];
+			med = ((double) elements)/2;
+		}
+		else {
+			med = ((double) list[n/2]);
+		}
+		return med.intValue();
 	}
 }
