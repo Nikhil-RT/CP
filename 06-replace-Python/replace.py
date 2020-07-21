@@ -8,10 +8,7 @@ def fun_replace(s1, s2, s3):
 	# return s1
 	for i in range(len(s1)):
 		while( i < len(s3)):
-			# if(s1[i] == s2[i]):
-			# 	s1[i] == s3[i]
-			# # i = i+1
-			if(s2[i] in s1[i]):
-				s1[i] = s3[i]
-			i = i+1	
+			if(s1[i] == s2[i]):
+				s1[i] == s3[i]
+			i = i+1
 	return s1
