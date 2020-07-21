@@ -9,7 +9,7 @@ def ishappynumber(n):
 		i = 0
 		while(number > 0):
 			r = number%10
-			i+=(r**2)
+			i = i + (r**2)
 			number = number//10
 		return i
 	
