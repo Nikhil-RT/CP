@@ -14,7 +14,7 @@ def ishappynumber(n):
 		return i
 	
 	lst = []
-	while(sum(n) not in lst):
+	while sum(n) not in lst:
 		result = sum(n)
 		if (result == 1):
 			return True
