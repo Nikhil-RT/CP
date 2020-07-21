@@ -28,7 +28,7 @@ def ishappynumber(n):
 def fun_nth_happy_prime(n):
     # return 0
     a = []
-    for i in range(50):
-        if (ishappynumber(i)):
-            a.append(i)
+    for j in range(50):
+        if ishappynumber(j):
+            	a.append(j)
     return a[n]
