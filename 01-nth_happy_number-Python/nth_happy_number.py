@@ -20,9 +20,9 @@ def sum(n):
 
 def ishappynumber(n):
 	lst = []
-	while sum(n) not in lst:
+	while (sum(n) not in lst):
 		# res = sum(n)
-		if sum(n) == 1:
+		if (sum(n) == 1):
 			return True
 		else:
 			lst.append(sum(n))
