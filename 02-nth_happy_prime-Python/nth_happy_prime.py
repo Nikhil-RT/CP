@@ -22,7 +22,11 @@ def ishappynumber(n):
 			n = result
 	return False
 
-	
+def isPrime(n):
+	for i in range(2,n):
+		if (n%1 == 0 and n%i == 0):
+			return False
+		return True
 
 def fun_nth_happy_prime(n):
     # return 0
