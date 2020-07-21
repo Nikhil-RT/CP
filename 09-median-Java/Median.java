@@ -9,7 +9,7 @@ public class Median {
 		int n = list.length;
 		Double med;
 		if (n%2 == 0) {
-			double elements = list[n/2]+list[n/2 - 1];
+			double elements = list[n/2]+list[(n/2) - 1];
 			med = ((double) elements)/2;
 		}
 		else {
