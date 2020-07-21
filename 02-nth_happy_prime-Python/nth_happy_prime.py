@@ -21,11 +21,6 @@ def ishappynumber(n):
 			i+=(r**2)
 			n//=10
 		return i
-		
-
-    			
-
-
 
 def fun_nth_happy_prime(n):
     # return 0
