@@ -14,7 +14,7 @@ class vowelscount {
 			}
 		}
 		// return count-1;
-		return --count;
+		return count;
 	}
 	
 }
