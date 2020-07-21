@@ -10,6 +10,28 @@
 # assert(nthHappyNumber(6) == 28)
 # assert(nthHappyNumber(7) == 31)
 
+def sum(n):
+	a = 0
+	while n > 0:
+		r = n%10
+		a += r**2
+		n//=10
+	return a
+
+def ishappynumber(n):
+	lst = []
+	while sum(n) not in lst:
+		# res = sum(n)
+		if sum(n) == 1:
+			return True
+		else:
+			lst.append(sum(n))
+			n = sum(n)
+	return False
 
 def fun_nth_happy_number(n):
-	return 0
+	a = []
+	for j in range(40):
+		if (ishappynumber(j)):
+			a.append(j)
+	return a[n]
