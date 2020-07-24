@@ -7,4 +7,22 @@
 
 def issorted(a):
 	# your code goes here
-	pass
+	if len(a) == 0: 
+		return True
+	b = max(a)
+	c = 0
+	if a[0] == b:
+		for i in range(len(a)):
+			if i == len(a)-1:
+				break
+			if a[i] >= a[i+1]:
+				c = c + 1
+
+	else:
+		for i in range(len(a)):
+			if len(a) - 1 == i:
+				break
+			if a[i+1] >= a[i]:
+				c = c + 1
+
+	return c == len(a)-1
