@@ -17,7 +17,11 @@
 
 
 def fun_wordwrap(s, n):
-	return ""
-
-
+	sum = ""
+	a = s.strip()
+	b = a.replace(" ","-")
+	# adnadadjasdfkakdf
+	for i in range(0,len(b),n):
+		s += z[i:i+n]
+	return sum[:len(sum)-1]
  
