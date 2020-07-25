@@ -28,4 +28,4 @@ def fun_rotatestrings(s, n):
 			return s[x:] + s[:x]
 		return s[n:] + s[:n]
 	
-	return a
+	return s
