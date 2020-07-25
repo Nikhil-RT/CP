@@ -11,7 +11,7 @@ def findzerowithbisection(x, epsilon):
 	# your code starts here
 	min = 0
 	max = x
-	mid = (min-max)/2
+	mid = (max-mid)/2
 	while True:
 		if math.sqrt(x) < mid:
 			max = mid
