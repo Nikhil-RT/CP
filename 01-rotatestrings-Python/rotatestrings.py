@@ -10,7 +10,7 @@ def fun_rotatestrings(s, n):
     	
 
 	if n < 0:
-		k = -len(s)
+		k = len(s)
 		if k > (-n):
 			x = k + n
 			return s[x:]+s[:x]
