@@ -20,8 +20,7 @@ def fun_wordwrap(s, n):
 	sum = ""
 	a = s.strip()
 	b = a.replace(" ","-")
-	# adnadadjasdfkakdf
 	for i in range(0,len(b),n):
-		s += z[i:i+n]
+		sum = sum + z[i:i+n]+"\n"
 	return sum[:len(sum)-1]
  
