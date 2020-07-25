@@ -23,7 +23,6 @@ class HashTable(object):
         if self.table[inp] == string:
             return string
         return -1
-        pass
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
