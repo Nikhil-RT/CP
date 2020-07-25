@@ -21,7 +21,7 @@ class HashTable(object):
         # Your code goes here
         inp = self.calculate_hash_value(string)
         if self.table[inp] == string:
-            return string
+            return inp
         return -1
 
     def calculate_hash_value(self, string):
