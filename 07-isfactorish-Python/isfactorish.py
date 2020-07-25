@@ -12,5 +12,15 @@
 
 
 def fun_isfactorish(n):
-	return False
 
+	c = 0
+	lst = []
+	string = str(abs(n))
+	for i in string:
+		if int(i) == 0:
+			return False
+		if i not in lst:
+			lst.append(i)
+			if n%int(i) == 0:
+				c = c + 1
+	return c == 3
