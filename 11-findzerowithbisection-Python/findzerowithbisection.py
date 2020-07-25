@@ -3,9 +3,21 @@
 # Rather than exhaustively trying things starting at 1, suppose instead we pick a number in the middle of this range
 # Bisection search works when value of function varies monotonically with input
 # If g, the users input/guess, is less than/greater than the midpoint of the range, then that number becomes the new high point of said range and is then factored into the new search.
-
+import math
 def findzerowithbisection(x, epsilon):
 	# epsilon and step are initialized
 	# don't change these values
 	# epsilon
 	# your code starts here
+	min = 0
+	max = x
+	mid = (min-max)/2
+	while True:
+		if math.sqrt(x) < mid:
+			max = mid
+		else:
+			min = mid
+		mid = (min+max)/2
+		if(abs(mid**2-x)) < epsilon:
+			break
+	return mid
