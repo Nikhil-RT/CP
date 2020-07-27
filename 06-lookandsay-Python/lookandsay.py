@@ -9,4 +9,10 @@
 
 def lookandsay(a):
 	# Your code goes here
-	pass
+	lst  = []
+	lst1 = []
+	for i in a:
+		if i not in lst1:
+			lst.append((a.count(i),i))
+		lst1.append(i)
+	return lst
