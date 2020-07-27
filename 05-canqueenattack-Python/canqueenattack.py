@@ -5,5 +5,4 @@
 
 def canqueenattack(qR, qC, oR, oC):
 	# Your code goes here
-	if qR == oR or qC == oC or abs(qR-oR)-abs(qC-oC) == 0:
-		return True
+	return qR == oR or qC == oC or abs(qR-oR)-abs(qC-oC)==0
