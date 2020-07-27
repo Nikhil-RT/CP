@@ -10,5 +10,14 @@
 
 
 def fun_getaverage(s): 
-	return 0.0
-
+	a = s.split(",")
+	lst = []
+	for i in a:
+		try:
+			lst.append(int(i))
+		except:
+			continue
+	if len(lst)!= 0:
+		return sum(lst)/len(lst)
+	else:
+		return 0
