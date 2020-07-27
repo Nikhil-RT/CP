@@ -8,5 +8,19 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
+def is_even(n):
+	if n == 0:
+		return 0
+
+	elif (n%10)%2 == 0:
+		return is_even(n//10)*10
+	
+	return is_even(n//10)
+
+
+
 def fun_recursion_onlyevendigits(l): 
-		return []
+	
+	if (len(l)!=0):
+    		return [is_even(l[0])]+fun_recursion_onlyevendigits(l[1:])
+	return []
