@@ -10,6 +10,6 @@ def fun_matrixmultiply(m1, m2):
     for a in range(len(m1)):
         for b in range(len(m2[0])):
             for c in range(len(m2)):
-                result[a][b] += m1[i][k]*m2[k][j]
+                result[a][b] += m1[i][c]*m2[c][b]
     return result
 
