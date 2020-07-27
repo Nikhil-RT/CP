@@ -14,5 +14,9 @@ def multipolynomials(p1, p2):
 			l = len(p2)-(j+1)
 			ls[len(ls)-(f+l+1)] += p1[i]*p2[j]
 	
-	return 0
+	return ls
 
+
+
+
+# \\\\\\\\\\\\
