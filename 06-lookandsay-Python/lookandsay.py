@@ -15,4 +15,4 @@ def lookandsay(a):
 		if i not in lst1:
 			lst.append((a.count(i),i))
 		lst1.append(i)
-	return lst1
+	return lst
