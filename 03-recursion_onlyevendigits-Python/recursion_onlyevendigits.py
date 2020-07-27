@@ -13,7 +13,7 @@ def is_even(n):
 		return 0
 
 	elif (n%10)%2 == 0:
-		return is_even(n//10)*10
+		return is_even(n//10)*10+(n%10)
 	
 	return is_even(n//10)
 
