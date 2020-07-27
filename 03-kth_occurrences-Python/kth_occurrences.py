@@ -5,6 +5,17 @@
 
 
 def fun_kth_occurrences(s, n):
-	return 'a'
-
+	dic={}
+	s = s.replace(" ","")
+	for i in s:
+		if i not in dic:
+			dic[i] = s.count(i)
+	s_dic = sorted(dic.items(), key = lambda x: x[1], reverse = True)
+	if len(s_dic) < n:
+		a = s_dic[0]
+		return a[0]
+	for i in range(len(s_dic)):
+		if i == n-1:
+			a = s_dic[i]
+			return a[0]
 
