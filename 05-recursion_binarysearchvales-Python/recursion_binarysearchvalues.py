@@ -24,7 +24,8 @@ def binary_search(l,L,min,max,x):
 		if L[mid] == x:
 			if len(l) == 0:
 				return l.append((L.index(x),x))
-			return l
+			else:
+				return l
 		elif L[mid] > x:
 			return binary_search(l,L,min,mid-1,x)
 		else:
@@ -35,6 +36,6 @@ def binary_search(l,L,min,max,x):
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
 	length = len(L)-1
-	return binary_search([],L,0,length,v)
+	return binary_search([],L,0,len(L)-1,v)
 	pass
 	
