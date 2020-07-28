@@ -15,4 +15,15 @@
 
 def recursion_secondlargest(L):
 	# Your code goes here
+	if (len(L)> 0):
+		largest = L[0]
+		largest2nd = None
+		for i in L[1:]:
+			if i > largest:
+				largest2nd = largest
+				largest = i
+			elif largest2nd == None or largest2nd < i:
+				largest2nd = i
+		return largest2nd
+	return None
 	pass
