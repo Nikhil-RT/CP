@@ -10,17 +10,24 @@ L = []
 def isproperty309():
 	# Your code goes here
 	cnt = 0
-	for i in range(309,8000):
-		a = pow(i,5)
-		a = str(a)
+	i = 0
+	n = n**5
+	while n > 0:
+		if i != n%10:
+			n = n//10
 
-		for j in l:	
-			if str(j) in a:
-				cnt = cnt+1
-		if cnt == 10:
-			L.append(i)
-		cnt = 0
+		elif i == n%10:
+			cnt = cnt + 1
+			i = i + 1
+			if count > 9:
+				return True
+	return False
 
 def nthwithproperty309(n):
-	isproperty309()
-	return L[n]
+	i = -1
+	g = 0
+	while i <n:
+		g += 1
+		if isproperty309(g):
+			i = i + 1
+	return g
