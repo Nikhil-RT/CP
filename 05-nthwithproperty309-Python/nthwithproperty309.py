@@ -12,14 +12,16 @@ def isproperty309():
 	cnt = 0
 	i = 0
 	n = n**5
+	t = n
 	while n > 0:
 		if i != n%10:
 			n = n//10
 
 		elif i == n%10:
 			cnt = cnt + 1
+			n = t
 			i = i + 1
-			if count > 9:
+			if cnt > 9:
 				return True
 	return False
 
