@@ -4,8 +4,8 @@
 # Write the function nthWithProperty309 that takes a non-negative int n and returns 
 # the nth number with Property309.
 
-ls = [0,1,2,3,4,5,6,7,8,9]
-lst = []
+l = [0,1,2,3,4,5,6,7,8,9]
+L = []
 
 def isproperty309():
 	# Your code goes here
@@ -14,14 +14,13 @@ def isproperty309():
 		a = pow(i,5)
 		a = str(a)
 
-		for j in ls:	
+		for j in l:	
 			if str(j) in a:
 				cnt = cnt+1
 		if cnt == 10:
-			lst.append(i)
+			L.append(i)
 		cnt = 0
-	pass
 
 def nthwithproperty309(n):
 	isproperty309()
-	return lst[n]
+	return L[n]
