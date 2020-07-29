@@ -12,6 +12,7 @@ def nthwithproperty309(n):
 		n = n**5
 		t = n
 		while n > 0:
+    			
 			if i != n%10:
 				n = n//10
 
@@ -19,13 +20,15 @@ def nthwithproperty309(n):
 				cnt = cnt + 1
 				n = t
 				i = i + 1
+
 				if cnt > 9:
 					return True
+
 		return False
-		i = -1
-		g = 0
-		while i <n:
-			g += 1
-			if isproperty309(g):
-				i = i + 1
-		return g
+	i = -1
+	g = 0
+	while i <n:
+		g += 1
+		if isproperty309(g):
+			i = i + 1
+	return g
