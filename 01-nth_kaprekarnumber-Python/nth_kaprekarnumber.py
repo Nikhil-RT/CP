@@ -8,6 +8,30 @@
 
 
 import math
+def isKaprekar(n):
+    if n<= 0:
+        return False
+    k = n**2
+    if k < 10:
+        if k == n :
+            return True
+    num = math.ceil(math.log(k,10))
+    count = 1
 
+    while count < num:
+        if k%10**count == 0:
+            count +=1
+            continue
+        if (k%10**count) + (kW//10**count) == n:
+            return True
+            break
+        count += 1
+    return False
+
+    
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    lst = []
+    for i in range(80000):
+        if isKaprekar(i):
+            lst.append(i)
+    return lst[n];
