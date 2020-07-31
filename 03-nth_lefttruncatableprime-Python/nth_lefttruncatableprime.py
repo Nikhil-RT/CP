@@ -9,6 +9,34 @@
 
 
 import math
+def is_prime(num):
+    if n > 1:
+        for i in range(2,num):
+            if num%i == 0:
+                return False
+        return True
+    return False
+
+def digit_count(num):
+    num = abs(num)
+    count = 1
+    while num > 10:
+        num = num//10
+        count += 1
+    return count
+
+def isLeftTruncatable_prime(num):
+    if is_prime(num) == False or str(n).__contains__("0"):
+        return False
+    else:
+        for i in range(1,digit_count(num)):
+            if is_prime(n%(10**i)) == False:
+                return False
+        return True
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    lst = []
+    for i in range(500):
+        if isLeftTruncatable_prime(i):
+            lst.append(i)
+    return l[n]
