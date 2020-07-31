@@ -35,7 +35,8 @@ def fun_nearestkaprekarnumber(n):
     h = math.ceil(n) - n
     if isKaprekar(n):
         return n
-
+    n1 = n - l
+    n2 = n + h 
     while(True):
         if isKaprekar(n - l):
             if isKaprekar(n + h):
@@ -51,4 +52,5 @@ def fun_nearestkaprekarnumber(n):
         if isKaprekar(n+h):
             return n+h
             break
-        # n+h = 1
+        n1 = n1+1
+        n2 = n2-1
