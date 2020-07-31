@@ -24,7 +24,7 @@ def isKaprekar(n):
         if k%10**count == 0:
             count += 1
             continue
-        if k%10**count + k//10**count == n:
+        if (k%10**count) + (k//10**count) == n:
             return True
             break
         count += 1
@@ -38,19 +38,20 @@ def fun_nearestkaprekarnumber(n):
     n1 = n - l
     n2 = n + h 
     while(True):
-        if isKaprekar(n - l):
-            if isKaprekar(n + h):
-                if h < l:
-                    return n+h
+        if isKaprekar(n1):
+            if isKaprekar(n2):
+                if abs(n2-h) < abs(n1-n):
+                    return n2
                     break
                 else:
-                    return n-l
+                    return n1
                     break
             else:
                 return n-l
                 break
-        if isKaprekar(n+h):
-            return n+h
+        if isKaprekar(n2):
+            return n2
             break
-        n1 = n1+1
-        n2 = n2-1
+        n1 = n1-1
+        n2 = n2+1
+        
