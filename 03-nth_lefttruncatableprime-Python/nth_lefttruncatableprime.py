@@ -30,7 +30,7 @@ def isLeftTruncatable_prime(num):
         return False
     else:
         for i in range(1,digit_count(num)):
-            if is_prime(n%(10**i)) == False:
+            if is_prime(num%(10**i)) == False:
                 return False
         return True
 
