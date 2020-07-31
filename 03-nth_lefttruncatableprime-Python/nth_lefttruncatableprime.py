@@ -21,12 +21,12 @@ def digit_count(num):
     num = abs(num)
     count = 1
     while num > 10:
-        num = num//10
+        num //= 10
         count += 1
     return count
 
 def isLeftTruncatable_prime(num):
-    if is_prime(num) == False or str(n).__contains__("0"):
+    if is_prime(num) == False or str(num).__contains__("0"):
         return False
     else:
         for i in range(1,digit_count(num)):
