@@ -18,7 +18,7 @@ def isKaprekar(n):
     if k < 10:
         if k == n:
             return True
-    numk = math.ceil(math.log(k,10))
+    num = math.ceil(math.log(k,10))
     count = 1
     while count < num:
         if k%10**count == 0:
