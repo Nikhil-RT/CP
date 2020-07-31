@@ -11,6 +11,44 @@
 
 
 import math
+def isKaprekar(n):
+    if n <= 0:
+        return False
+    k = n**2
+    if k < 10:
+        if k == n:
+            return True
+    numk = math.ceil(math.log(k,10))
+    count = 1
+    while count < num:
+        if k%10**count == 0:
+            count += 1
+            continue
+        if k%10**count + k//10**count == n:
+            return True
+            break
+        count += 1
+    return False
 
 def fun_nearestkaprekarnumber(n):
-    return 1
+    l = n - math.floor(n)
+    h = math.ceil(n) - n
+    if isKaprekar(n):
+        return n
+
+    while(True):
+        if isKaprekar(n - l):
+            if isKaprekar(n + h):
+                if h < l:
+                    return n+h
+                    break
+                else:
+                    return n-l
+                    break
+            else:
+                return n-l
+                break
+        if isKaprekar(n+h):
+            return n+h
+            break
+        # n+h = 1
