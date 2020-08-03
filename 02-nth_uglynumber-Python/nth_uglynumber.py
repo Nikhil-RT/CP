@@ -24,4 +24,10 @@ def isUgly(n):
     return True 
 
 def fun_nth_uglynumber(n):
-    return 0
+    lst = [1]
+    i = 2
+    while (len(lst) <= n+1):
+        if isUgly(i):
+            lst.append(i)
+        i += 1
+    return lst
