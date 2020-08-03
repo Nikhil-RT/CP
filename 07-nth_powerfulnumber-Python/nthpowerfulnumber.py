@@ -20,7 +20,7 @@ def nthpowerfulnumber(n):
 	# Your code goes here
 	lst = []
 	for i in range(1000):
-		if ispowerfulNumber(n):
+		if ispowerfulNumber(i):
 			lst.append(i)
 	return lst[n+1]
 	pass
