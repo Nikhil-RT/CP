@@ -19,7 +19,7 @@ def isTidy(n):
 def fun_nth_tidynumber(n):
     lst = []
     i = 1
-    while(len(lst) < n):
+    while(len(lst) <= n):
         if isTidy(i):
             lst.append(i)
         i += 1
