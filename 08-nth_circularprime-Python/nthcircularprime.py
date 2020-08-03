@@ -41,7 +41,7 @@ def isCircular_prime(n):
 def nthcircularprime(n):
 	# Your code goes here
 	lst = []
-	for i in range(100000):
+	for i in range(10000):
 		if isCircular_prime(i):
 			lst.append(i)
 	return lst[n]
