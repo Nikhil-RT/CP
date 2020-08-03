@@ -13,7 +13,7 @@ def isPronic(n):
 def nthpronicnumber(n):
 	# Your code goes here
 	lst = []
-	for i in range(l3n(lst)):
+	for i in range(len(lst)):
 		if isPronic(i):
 			lst.append(i)
 	return lst[n]
