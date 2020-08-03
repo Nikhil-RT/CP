@@ -30,4 +30,5 @@ def fun_nth_uglynumber(n):
         if isUgly(i):
             lst.append(i)
         i += 1
-    return lst
+    # return lst
+    print(lst)
