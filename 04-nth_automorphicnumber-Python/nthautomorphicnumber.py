@@ -14,4 +14,9 @@ def isAutomorphic(n):
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
+	lst = []
+	for i in range(500000):
+		if isAutomorphic(i):
+			lst.append(i)
+	return lst[n]
 	pass
