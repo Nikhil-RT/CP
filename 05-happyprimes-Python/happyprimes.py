@@ -22,9 +22,23 @@ def sumofSquares(m):
     while m > 0:
         r = m%10
         s += r**2
-        n = n//10
+        m = m//10
     return s
+
+def isHappyNumber(m):
+    lst = []
+    while sumofSquares(m) not in lst:
+        res = sumofSquares(m)
+        if res == 1:
+            return True
+        else:
+            lst.append(res)
+            m = res
+    return False
 
 def ishappyprimenumber(n):
     # Your code goes here
+    if isHappyNumber(n) and is_prime(n):
+        return True
+    return False
     pass
